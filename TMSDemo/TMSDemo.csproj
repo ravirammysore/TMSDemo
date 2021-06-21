@@ -92,15 +92,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reverse\Address.cs" />
-    <Compile Include="Reverse\Distribution.cs" />
-    <Compile Include="Reverse\Distribution_Detail.cs" />
-    <Compile Include="Reverse\Prasadam.cs" />
-    <Compile Include="Reverse\PrasadamType.cs" />
-    <Compile Include="Reverse\Priest.cs" />
-    <Compile Include="Reverse\Responsibility.cs" />
-    <Compile Include="Reverse\TempleModel.cs" />
-    <Compile Include="Reverse\Vehicle.cs" />
     <EmbeddedResource Include="Data\Migrations\202106171756100_InitialCreate.resx">
       <DependentUpon>202106171756100_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
