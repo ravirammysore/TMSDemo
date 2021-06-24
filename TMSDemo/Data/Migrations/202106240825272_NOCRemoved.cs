@@ -1,0 +1,18 @@
+﻿namespace TMSDemo.Data.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class NOCRemoved : DbMigration
+    {
+        public override void Up()
+        {
+            DropColumn("dbo.Priests", "NOC");
+        }
+        
+        public override void Down()
+        {
+            AddColumn("dbo.Priests", "NOC", c => c.Int(nullable: false));
+        }
+    }
+}

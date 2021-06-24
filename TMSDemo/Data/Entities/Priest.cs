@@ -19,6 +19,7 @@ namespace TempleManagement.Data.Entities
         public int LockerNumber { get; set; }
         public int Age { get; set; }
         public DateTime? DOJ { get; set; }
+        //public int NOC { get; set; }
 
         public virtual ICollection<Vehicle> Vehicles { get; set; }
         public virtual ICollection<Responsibility> Responsibilities { get; set; }

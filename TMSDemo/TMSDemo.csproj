@@ -82,6 +82,14 @@
     <Compile Include="Data\Migrations\202106180807419_DOJCanBeNull.designer.cs">
       <DependentUpon>202106180807419_DOJCanBeNull.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Migrations\202106240819462_NOCAdded.cs" />
+    <Compile Include="Data\Migrations\202106240819462_NOCAdded.designer.cs">
+      <DependentUpon>202106240819462_NOCAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Migrations\202106240825272_NOCRemoved.cs" />
+    <Compile Include="Data\Migrations\202106240825272_NOCRemoved.designer.cs">
+      <DependentUpon>202106240825272_NOCRemoved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Data\TempleContext.cs" />
     <Compile Include="Form1.cs">
@@ -103,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Migrations\202106180807419_DOJCanBeNull.resx">
       <DependentUpon>202106180807419_DOJCanBeNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\202106240819462_NOCAdded.resx">
+      <DependentUpon>202106240819462_NOCAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\202106240825272_NOCRemoved.resx">
+      <DependentUpon>202106240825272_NOCRemoved.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

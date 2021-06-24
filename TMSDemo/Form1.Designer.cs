@@ -34,13 +34,16 @@
             this.btnCreatePriest = new System.Windows.Forms.Button();
             this.btnShowDsitribution = new System.Windows.Forms.Button();
             this.btnCreateDistribution = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProcessing
             // 
             this.lblProcessing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblProcessing.AutoSize = true;
-            this.lblProcessing.Location = new System.Drawing.Point(12, 197);
+            this.lblProcessing.Location = new System.Drawing.Point(12, 405);
             this.lblProcessing.Name = "lblProcessing";
             this.lblProcessing.Size = new System.Drawing.Size(48, 17);
             this.lblProcessing.TabIndex = 0;
@@ -78,7 +81,7 @@
             // 
             // btnShowDsitribution
             // 
-            this.btnShowDsitribution.Location = new System.Drawing.Point(399, 131);
+            this.btnShowDsitribution.Location = new System.Drawing.Point(278, 108);
             this.btnShowDsitribution.Name = "btnShowDsitribution";
             this.btnShowDsitribution.Size = new System.Drawing.Size(165, 42);
             this.btnShowDsitribution.TabIndex = 4;
@@ -88,7 +91,7 @@
             // 
             // btnCreateDistribution
             // 
-            this.btnCreateDistribution.Location = new System.Drawing.Point(180, 131);
+            this.btnCreateDistribution.Location = new System.Drawing.Point(74, 108);
             this.btnCreateDistribution.Name = "btnCreateDistribution";
             this.btnCreateDistribution.Size = new System.Drawing.Size(165, 42);
             this.btnCreateDistribution.TabIndex = 5;
@@ -96,11 +99,33 @@
             this.btnCreateDistribution.UseVisualStyleBackColor = true;
             this.btnCreateDistribution.Click += new System.EventHandler(this.btnCreateDistribution_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(473, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 42);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Raw Query";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(75, 197);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(368, 150);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 233);
+            this.ClientSize = new System.Drawing.Size(788, 441);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCreateDistribution);
             this.Controls.Add(this.btnShowDsitribution);
             this.Controls.Add(this.btnCreatePriest);
@@ -109,6 +134,7 @@
             this.Controls.Add(this.lblProcessing);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,6 +148,8 @@
         private System.Windows.Forms.Button btnCreatePriest;
         private System.Windows.Forms.Button btnShowDsitribution;
         private System.Windows.Forms.Button btnCreateDistribution;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

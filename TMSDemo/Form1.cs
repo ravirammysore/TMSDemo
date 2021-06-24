@@ -39,6 +39,7 @@ namespace TMSDemo
             {
                 var initializer = new MigrateDatabaseToLatestVersion<TempleContext, Configuration>();
                 Database.SetInitializer(initializer);
+                
                 using (var ctx = new TempleContext())
                 {
                     if (!ctx.PrasadamTypes.Any())
@@ -99,7 +100,7 @@ namespace TMSDemo
             using (var ctx = new TempleContext())
             {
                 var typename = ctx.Prasadams.FirstOrDefault()?.PrasadamType.Name ?? "NA";
-                MessageBox.Show(typename);
+                MessageBox.Show(typename);                
             }
         }
 
@@ -206,6 +207,23 @@ namespace TMSDemo
                 }
                 var msg = $"Priest has made {distributions.Count()} distributions until today, amounting to Rs.{sum}";
                 MessageBox.Show(msg);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var ctx = new TempleContext())
+                {
+                    var results = ctx.Priests.SqlQuery("select * from priests where Id=3");
+                    var name = results.FirstOrDefault()?.Name ?? "NA";
+                    MessageBox.Show(name);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
